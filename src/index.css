@@ -12,3 +12,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.avatar {
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.nav-tabs .nav-item {
+  width: 50%;
+  text-align: center;
+}
+
+.dashboard-list, .leaderboard-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 30px;
+}
+
+#main-menu {
+  float: left;
+}
+
+.login-box {
+  width: 50%;
+  margin: auto;
+  padding-top: 75px;
+}
+
+.question-item {
+  margin: auto;
+  width: 50%;
+}
+
+.question-page-option {
+  width: 44%;
+  margin: 3%;
+}
+
+.question-page-option-stats {
+  display: block;
+  font-size: small;
+}
+
+.question-page-option-text {
+  font-weight: bold;
+}
+
+.user-item-total {
+  color: darkcyan;
+}
+
+.not-answered .question-page-option-stats {
+  display: none;
+}
