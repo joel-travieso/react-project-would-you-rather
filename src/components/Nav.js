@@ -53,7 +53,6 @@ function handleLogout (e, props) {
 
 function mapStateToProps ({authedUser, users, questions}) {
   const { name } = authedUser ? users[authedUser] : ''
-  console.log(name)
   return {
     authedUser,
     name,

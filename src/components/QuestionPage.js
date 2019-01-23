@@ -40,16 +40,13 @@ class QuestionPage extends Component {
     } = question
 
     return (
-
-
-
-      <div class="question-page card bg-light mb-3">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-6 col-md-4">
+      <div className="question-page card bg-light mb-3">
+        <div className="card-body">
+          <div className="row">
+            <div className="col-6 col-md-4">
               <User id={question.author}/>
             </div>
-            <div class="col-12 col-md-8">
+            <div className="col-12 col-md-8">
               <button className={'btn question-page-option option-one ' + (answered === 'optionOne' ? 'btn-success' : (answered === 'optionTwo' ? 'btn-dark' : 'btn-dark not-answered')) } disabled={answered} onClick={ answered ? null : this.handleAnswerOne}>
                 <span className='question-page-option-text'>{optionOne.text}</span>
                 <span className='question-page-option-stats'>{optionOne.votes.length} votes ({optionOnePercent}%)</span>

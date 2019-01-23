@@ -15,20 +15,18 @@ class UserItem extends Component {
     } = user
 
     return (
-
-
-      <div class="question-item card bg-light mb-3">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-6 col-md-4">
+      <div className="question-item card bg-light mb-3">
+        <div className="card-body">
+          <div className="row">
+            <div className="col-6 col-md-4">
               <User id={id}/>
             </div>
-            <div class="col-6 col-md-4">
+            <div className="col-6 col-md-4">
               <div className='user-item-user'>
                 <div className='user-item-asked'>Asked: {questions.length} | Answered: {Object.keys(answers).length}</div>
               </div>
             </div>
-            <div class="col-6 col-md-4">
+            <div className="col-6 col-md-4">
               <div className='user-item-total'><span>Total:</span><h1>{questions.length + Object.keys(answers).length}</h1></div>
             </div>
           </div>

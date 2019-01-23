@@ -48,12 +48,12 @@ class AddQuestion extends Component {
       <div>
         <h3>Create question</h3>
         <form className='add-question' onSubmit={this.handleSubmit}>
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Option 1" value={textOne} onChange={this.handleChangeOne}/>
+          <div className="row">
+            <div className="col">
+              <input type="text" className="form-control" placeholder="Option 1" value={textOne} onChange={this.handleChangeOne}/>
             </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Option 2" value={textTwo} onChange={this.handleChangeTwo}/>
+            <div className="col">
+              <input type="text" className="form-control" placeholder="Option 2" value={textTwo} onChange={this.handleChangeTwo}/>
             </div>
             <button className='btn btn-primary' type='submit' disabled={textOne === '' || textTwo === ''}>
                 Submit
